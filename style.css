@@ -10,10 +10,11 @@ body {
 }
 .header {
 height: 10%;
-border: 2px solid red;
+/* border: 2px solid red; */
 text-align: center;
-
+background-color: rgba(127, 255, 212, 0.619);
 }
+
 .title {
     
     font-size: calc(0.3 * 10vh);
@@ -23,34 +24,88 @@ text-align: center;
 .main {
     display: flex;
     height: 85%;
-
+    background-color: rgba(127, 255, 212, 0.619);
 }
-.leftpnl,
-.rightpnl,
-.middlepnl {
+
+.leftpnl{
     border: 2px solid greenyellow;
-    /* height: 50%; */
-    width: 50%;
+    width: 15%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
+.rightpnl {
+    border: 2px solid greenyellow;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+.middlepnl{
+    border: 2px solid greenyellow;
+    width: 70%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+} 
+
 
 .leftimgs,
 .rightimgs {
     border: 2px solid black;
     height: 100%;
+    width: fit-content;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
+.leftimgs {
+align-items: start;
+    justify-content: center;
+}
+.rightimgs {
+    align-items: end;
+justify-content: center;
+}
+
 .dogimgs {
-    height: 40%;
-    width: 85%;
+    height: calc(0.2 * 85vh);
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.middleDiv,
+.topDiv,
+.bottomDiv {
+    border: 2px solid brown;
+    /* height: 50%; */
+    margin: 2px;
+    padding: 15px;
+}
+
+.topDiv {
+    height: fit-content;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+
+.list {
+    /* border: 2px dotted blue; */
+    font-family: 'Diphylleia', serif;
+    font-size: 12px;
+}
+
+.list p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
 }
 
 .footer {
     height: 5%;
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
 }
