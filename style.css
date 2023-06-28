@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
 
@@ -12,7 +13,9 @@ body {
 height: 10%;
 /* border: 2px solid red; */
 text-align: center;
-background-color: rgba(127, 255, 212, 0.619);
+background-image: url(/imgs/pawprints.jpeg);
+ 
+ background-size: cover;
 }
 
 .title {
@@ -22,13 +25,15 @@ background-color: rgba(127, 255, 212, 0.619);
 }
 
 .main {
+    /* border: 3px solid blue; */
     display: flex;
-    height: 85%;
-    background-color: rgba(127, 255, 212, 0.619);
+    height: fit-content;
+    background-color: rgb(198, 235, 191);
+    background-size: cover;
 }
 
 .leftpnl{
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     width: 15%;
     display: flex;
     justify-content: center;
@@ -36,7 +41,7 @@ background-color: rgba(127, 255, 212, 0.619);
 }
 
 .rightpnl {
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     width: 15%;
     display: flex;
     justify-content: center;
@@ -45,21 +50,21 @@ background-color: rgba(127, 255, 212, 0.619);
 }
 
 .middlepnl{
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     width: 70%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
+    height: 100%;
+   
 } 
 
 
 .leftimgs,
 .rightimgs {
-    border: 2px solid black;
-    height: 100%;
+    /* border: 2px solid black; */
+    height: fit-content;
     width: fit-content;
     display: flex;
     flex-direction: column;
+    margin-top: -30px;
 }
 
 .leftimgs {
@@ -71,7 +76,7 @@ align-items: start;
 justify-content: center;
 }
 
-.dogimgs {
+.dogimgs, .dogcollars, .dogfoodbowls {
     height: calc(0.2 * 85vh);
     width: 100%;
     margin-bottom: 40px;
@@ -82,31 +87,61 @@ justify-content: center;
 .topDiv,
 .bottomDiv {
     /* border: 2px solid brown; */
-    /* height: 50%; */
-    margin: 2px;
-    padding: 15px;
+    /* height: 33%; */
+    /* margin: 2px; */
+    padding: 5px 17px;
+    /* text-align: center; */
 }
 
 .topDiv {
-    height: fit-content;
+    /* height: fit-content; */
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    /* height: 65%; */
+   font-size: 13px;
+   color: rgb(154, 47, 14);
+   margin-top: 20px;
 }
 
+ul {
+    text-align: center;
+    padding-inline-start: 0;
+    list-style-position: inside;
+}
 
 .list {
     /* border: 2px dotted blue; */
     font-family: 'Diphylleia', serif;
-    font-size: 12px;
+   
 }
-
 .list p {
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+   
+}
+.middleDiv {
+    font-size: 13px;
+    font-family: 'Diphylleia', serif;
+    /* height: 20%; */
+    color: rgb(154, 47, 14);
+}
+.middleDiv p, .middleDiv h5{
+    font-family: 'Roboto', sans-serif;
 }
 
+.bottomDiv {
+    /* border: 2px solid red; */
+    font-size: 13px ;
+    /* height: 20%; */
+    color: rgb(154, 47, 14);
+}
+
+
+
+a:-webkit-any-link {
+    color: rgb(221, 49, 40);
+    text-align: center;
+}
 .footer {
-    height: 5vh;
+    height: 50px;
     /* border: 2px solid rebeccapurple; */
-    background-color: rgba(127, 255, 212, 0.619);
+    background-color: rgb(198, 235, 191);
 }
